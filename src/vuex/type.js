@@ -1,0 +1,14 @@
+export const PRAISE_ARTICLE ='PRAISE_ARTICLE' //文章收藏
+export const SET_FRUIT ='SET_FRUIT' //水果数据
+export const SET_ADDRESSLIST ='SET_ADDRESSLIST' //地址列表
+export const ADD_CARTS = 'ADD_CARTS'  //加入购物车
+export const GET_ORDERS='GET_ORDERS' //所有订单
+export const SET_ORDERS='SET_ORDERS' //本次结算订单
+export const SET_CURRENTORDER='SET_CURRENTORDER' //当前操作订单
+export const SET_INDEX='SET_INDEX' //设置当前导航索引
+export const SET_ADDRESSEDIT='SET_ADDRESSEDIT' //设置当前地址编辑对象
+export const DEFAULT_ADDRESS='DEFAULT_ADDRESS' //设置当前地址
+export const EMPTY_ADDRESS='EMPTY_ADDRESS' //新增时清空当前编辑地址，避免新增输入框里面有编辑地址时的内容
+export const GET_ARTICLE ='GET_ARTICLE' //获取全部文章
+export const SET_ARTICLE ='SET_ARTICLE' //文章收藏
+export const COLLECT_GOODS='COLLECT_GOODS' //商品收藏
