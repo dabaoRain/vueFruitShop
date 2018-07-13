@@ -30,6 +30,36 @@ vue水果小商城
     components：  
        [Button.name]:Button  
     }  
-   (5)<van-button type="default">默认按钮</van-button>  
+   (5)按照文档方法引用   
+   
+ 5. vuex 数据仓库搭建  
+    index.js 数据仓库入口    
+    state.js    
+    actions.js   
+    type.js  
+    mutations.js
+    mapState方法  
+    this.$store.dispatch('方法', 参数);  
+    关于vuex 请大家阅读官网 https://vuex.vuejs.org/zh/  
+ 6. 项目目录分析  
+    水果商城：   
+    
+    
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
   
