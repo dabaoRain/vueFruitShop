@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 	.headerTitle{
 		width: 100%;
 		height: 1.45rem;
@@ -30,26 +30,26 @@ export default {
 		position: fixed;
 		top:0;
 		left: 0;
-	}
-	.header-left{
-		width: 10%;
-		height: 100%;
-		display: inline-block;
-	}
-	.header-in{
-	 width: 80%;
-	 display: inline-block;
-		text-align: center;
-		font-size: .4rem;
-	}
-	.header-rigth{
-		width: 10%;
-		display: inline-block;
-	}
-	.van-icon-zuojiantou{
-		font-size: 0.4rem;
-    line-height: 1.45rem;
-    text-align: center;
-    display: block;
+	  .header-left{
+			width: 10%;
+			height: 100%;
+			display: inline-block;
+			.van-icon-zuojiantou{
+				font-size: 0.4rem;
+				line-height: 1.45rem;
+				text-align: center;
+				display: block;
+			}
+		}
+		.header-in{
+		   width: 80%;
+		   display: inline-block;
+			text-align: center;
+			font-size: .4rem;
+		}
+		.header-rigth{
+			width: 10%;
+			display: inline-block;
+		}
 	}
 </style>
