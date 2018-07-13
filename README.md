@@ -1,7 +1,7 @@
 # vueFruitShop
 vue水果小商城
 
-项目历程：＜/br＞
+项目历程：   
 1.vue-cli 构建＜/br＞
   npm install --global vue-cli＜/br＞
   vue init webpack vue-fruit-shop＜/br＞
