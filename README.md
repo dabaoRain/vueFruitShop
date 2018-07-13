@@ -13,7 +13,8 @@ vue全家桶 vue+vuex+vue-router+axios+localstorage+sass 还有就是vant-ui组�
 
 ## 写在前面
 
-本项目是参考github一个vivo商城项目，地址为https://github.com/Mynameisfwk/vivo-shop，参考项目思路，在这里对原作者表示感谢。
+本项目是参考github一个vivo商城项目，地址为https://github.com/Mynameisfwk/vivo-shop
+参考该项目思路，在这里对原作者表示感谢。
 参考网站：http://jspang.com/ vue官网  
  
 
