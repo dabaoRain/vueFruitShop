@@ -26,7 +26,7 @@ vue全家桶 vue+vuex+vue-router+axios+localstorage+sass 还有就是vant-ui组�
 
 > [Vant UI](https://www.youzanyun.com/zanui/vant) 有赞前端团队基于有赞统一的规范实现的 Vue 组件库，提供了一整套 UI 基础组件和业务组件。
 
-> localstorage 本地存储对象 可以结合vuex存放用户操作数据
+>  [localstorage] 本地存储对象 可以结合vuex存放用户操作数据
 
 > [axios](https://www.npmjs.com/package/axios)：用来请求后端api数据  
 
