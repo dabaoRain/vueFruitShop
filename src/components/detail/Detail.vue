@@ -133,37 +133,37 @@ import DetailHeader from '../../common/header';
  } 
 </script>
 
-<style scoped  type="text/css">
+<style scoped lang="scss">
 	.goodDetailTitle{
 		text-align: center;
-	}
-	.goodDetailTitle h3{
-		font-size: .46rem;
-    color: #3a3a3a;
-	}
-	.goodDetailTitle h4{
-		font-size: .38rem;
-		color: #878787;
-	}
-	.goodDetailTitle h5{
-		font-size: .6rem;
-		color: #ff660a;
+		h3{
+		 font-size: .46rem;
+		 color: #3a3a3a;	
+		}
+		h4{
+		  font-size: .38rem;
+		  color: #878787;	
+		}
+		h5{ 
+		 font-size: .6rem;
+		 color: #ff660a; 	
+		}
 	}
 	.purchaseNum{
 		border-top: 1px solid #cecece;
 		border-bottom: 1px solid #cecece;
 		padding: .3rem 4%;
+		label{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: .5rem;
+			width: 60%;
+		}
+		div{
+			display: inline-block;
+			vertical-align: middle;
+		}
 		
-	}
-	.purchaseNum label{
-		display: inline-block;
-		vertical-align: middle;
-		font-size: .5rem;
-		width: 60%;
-	}
-	.purchaseNum div{
-		display: inline-block;
-		vertical-align: middle;
 	}
 	.collected{
 		color: red;
