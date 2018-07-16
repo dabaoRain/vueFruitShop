@@ -13,7 +13,25 @@
 			<span>{{listFruit.proName}}</span>
 			<span>￥{{listFruit.proPrice}}</span>
 	  	</li>
-	  </ul>     
+	  </ul> 
+   <ul class="container">
+  	<li v-for="(listFruit,index) in listFruitData" :key="listFruit.id" @click="getProDetail(listFruit.id)">
+  	<div class="proImg">
+  		<img :src="listFruit.proImg"/>
+  	</div>
+  	<span>{{listFruit.proName}}</span>
+  	<span>￥{{listFruit.proPrice}}</span>
+  	</li>
+  </ul> 
+	<ul class="container">
+		<li v-for="(listFruit,index) in listFruitData" :key="listFruit.id" @click="getProDetail(listFruit.id)">
+		<div class="proImg">
+			<img :src="listFruit.proImg"/>
+		</div>
+		<span>{{listFruit.proName}}</span>
+		<span>￥{{listFruit.proPrice}}</span>
+		</li>
+	</ul> 
   </div>	
 </template>
 
@@ -43,9 +61,6 @@ export default{
 			});
 		};
 		this.getAddressList();
-	},
-	created(){
-		this.$store.dispatch('setIndex', 0);
 	},
 	computed: {
 		...mapState([
@@ -79,22 +94,25 @@ export default{
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+   $font-color:#ff660a;
   .container{
 	  display:flex;
     width:100%;
-	}
-	.container li{
-	   flex:1;
-     text-align:center;
-		 padding:0 2%;
-		 font-size: .2rem;
-		 color: #ff660a;
-	}
-	.container li .proImg img{
-	  width: 80%;
-	}
-	.container li span{
-		display: block;
+    li{
+	     flex:1;
+       text-align:center;
+		   padding:0 2%;
+		   font-size: .2rem;
+		   color: $font-color;
+			 margin-top: .3rem;
+		   .proImg img{
+		   	  width: 80%;
+		   }
+		   span{
+		   	display: block;
+				 padding: .05rem 0;
+		   }
+	  }
 	}
 </style>
