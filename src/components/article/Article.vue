@@ -1,6 +1,6 @@
 <template>
   <div class="articles">
-	 <ArticleHeader title="健康水果"></ArticleHeader>
+	 <h3 class="articles_header">健康水果</h3>
 
 	 <ul class="articlesList">
 	   <li v-for="(article,index) in articlesLoad" :key="index" @click="goArticleDetail(article.id)">
@@ -20,8 +20,7 @@
 </template>
 
 <script>
-import ArticleHeader from '../../common/header';
-import { mapState } from 'vuex'
+ import { mapState } from 'vuex'
 import { Icon } from 'vant';
 import HomeFooter from '../../common/FooterBar'
 export default{
@@ -31,18 +30,15 @@ export default{
 	  }
   },
   components:{
-    HomeFooter,
-		ArticleHeader
+    HomeFooter
   },
   computed:{
 	  ...mapState([
-	  	'articles',
-			'nowIndex'
+	  	'articles'
 	  ])
   },
 	created(){
-	  this.getArticles();
-    this.$store.dispatch('setIndex', 1);
+	  this.getArticles()  	
 	},
   methods:{
 		getArticles(){
@@ -68,7 +64,7 @@ export default{
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .articles_header{
 	 width: 100%;
 	 height: 1.45rem;
@@ -82,19 +78,19 @@ export default{
 	 padding-top: 1.45rem;
 	 background: #fff;
 	 width: 100%;
-  }
-  .articlesList li{
-     padding: .3rem 2%;
-	 border-bottom: 1px dotted #ccc;
-  }
-  .articlesList li .article_title{
-	 font-size: .5rem;
-	 color: #505b63;
-  }
-  .articlesList li .article_img{
-	 height: 10rem;  
-  }
-  .articlesList li .article_publishDate{
-  font-size: .4rem;
+	 li{
+		 padding: .3rem 2%;
+		 border-bottom: 1px dotted #ccc; 
+		 .article_title{
+		   font-size: .5rem;
+		   color: #505b63;
+		 }
+		 .article_img{
+		    height: 10rem;  
+		 }
+		 .article_publishDate{
+		   font-size: .4rem;
+		 }
+	 }
   }
 </style>

@@ -66,33 +66,38 @@ export default{
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
    .articleDetail{
 	   padding-top: 1.45rem;
-   }
-   .articleDetail .articleCon{
-     text-indent: 2em;
-     font-size: .5rem;
-	 padding: .3rem 4%;
+		 .articleCon{
+		 	text-indent: 2em;
+		 	font-size: .5rem;
+		  padding: .3rem 4%;
+		 }
    }
    .articleOperations{
       margin-bottom: 1.5rem;
-	  display: flex;
+	     display: flex;
       justify-content: center;
-   }
-   .articleOperations div{
-	   width: 2.5rem;
-	   height: .6rem;
-	   border: 1px solid #25b5fe;
-	   border-radius: 30px;
-	   padding: .2rem 4%;
-	   font-size: .5rem;
-	   text-align: center;
-	   display: inline-block;
-	   margin: 0 2%;
-   }
-   .articleOperations ul li span{
-	  color: #25b5fe;
+			div{
+				width: 2.5rem;
+				height: .6rem;
+				border: 1px solid #25b5fe;
+				border-radius: 30px;
+				padding: .2rem 4%;
+				font-size: .5rem;
+				text-align: center;
+				display: inline-block;
+				margin: 0 2%;
+			}
+			ul{
+				li{
+					span{
+						color: #25b5fe;
+
+					}
+				}
+			}
    }
    .activeCollection{
 	  color:red;   
