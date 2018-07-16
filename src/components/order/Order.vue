@@ -96,37 +96,35 @@ export default{
 	.ordersShow{
 		margin-top: .5rem;
 		background: #fff;
-	}
-	.ordersShow .order_title{
-	  border-bottom: 1px solid #f0f0f0;
-		padding: .4rem 4%;
-		font-size: .4rem;
-	}
-	.ordersShow .order_title .orderStatus{
-		float: right;
-	}
-	.ordersShow .orderInfo{
-		border-bottom: 1px solid #f0f0f0;
-	}
-	.ordersShow .orderInfo{
-		padding: .2rem 4%;
-	}
-	.ordersShow .orderInfo div{
-		display: inline-block;
-		font-size: .4rem;
-	}
-	.ordersShow .orderInfo .orderImg{
-		width: 20%;
-		vertical-align: top;
-	}
-	.ordersShow .orderInfo .orderName{
-		width: 60%;
-		vertical-align: top;
-	}
-	.ordersShow .orderInfo .orderValue{
-		width: 10%;
-		vertical-align: top;
-		text-align: right;
+		.order_title{
+			border-bottom: 1px solid #f0f0f0;
+			padding: .4rem 4%;
+			font-size: .4rem;
+			.orderStatus{
+				float: right;
+			}
+		}
+		.orderInfo{
+			padding: .2rem 4%;
+			border-bottom: 1px solid #f0f0f0;
+			div{
+				display: inline-block;
+				font-size: .4rem;
+			}
+			.orderImg{
+				width: 20%;
+				vertical-align: top;
+			}
+			.orderName{
+				width: 60%;
+				vertical-align: top;
+			}
+			.orderValue{
+				width: 10%;
+				vertical-align: top;
+				text-align: right;
+			}
+		}
 	}
 	.orderOperation{
 		padding: .5rem 0;
