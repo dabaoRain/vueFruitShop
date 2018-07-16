@@ -8,7 +8,7 @@
 		 <h4>购买成功</h4>
 		 <div class="successBack">
 		    已收到您的货款,请留意
-			    <span @click="goOrderDetail">订单详情</span>
+			    <span style="color: #0000ff;" @click="goOrderDetail">订单详情</span>
             以及
             <router-link to="/order">我的订单</router-link>
             另外祝您生活愉快 感谢您的支持与厚爱
