@@ -83,37 +83,41 @@ export default{
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .collectTab{
 		padding-top: 1.45rem;
 	}
 	.articlesList{
-	background: #fff;
-	width: 100%;
+	  background: #fff;
+	  width: 100%;
+		li{
+		  padding: .3rem 2%;
+		  border-bottom: 1px dotted #ccc;	
+			.article_title{
+			  font-size: .5rem;
+			  color: #505b63;
+			}
+			.article_img{
+			  height: 10rem;  
+			}
+			.article_publishDate{
+			  font-size: .4rem;
+			}
+		}
 	}
-	.articlesList li{
-		padding: .3rem 2%;
-	border-bottom: 1px dotted #ccc;
-	}
-	.articlesList li .article_title{
-	font-size: .5rem;
-	color: #505b63;
-	}
-	.articlesList li .article_img{
-	height: 10rem;  
-	}
-	.articlesList li .article_publishDate{
-	font-size: .4rem;
-	}
-	.goodsCollect ul li{
-		border-bottom: 1px solid #d1d1d1;
-		padding: 0.4rem 2%;
-	}
-	.goodsCollect ul li .goodsTitle{
-		font-size: .4rem;
-		margin: .3rem 0;
-	}
-	.goodsCollect ul li .goodsTitle em{
-		float: right;
+	.goodsCollect{
+		ul{
+			li{
+				border-bottom: 1px solid #d1d1d1;
+				padding: 0.4rem 2%;
+				.goodsTitle{
+					font-size: .4rem;
+					margin: .3rem 0;
+					em{
+						float: right;
+					}
+				}
+			}
+		}
 	}
 </style>
