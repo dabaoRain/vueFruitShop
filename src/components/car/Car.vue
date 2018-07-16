@@ -73,7 +73,6 @@
    },
 	 created(){
 		 console.log(this.carts);
-		 this.$store.dispatch('setIndex', 2);
 	 },
    methods:{
 		 ...mapMutations(["shanchu"]),
@@ -123,14 +122,14 @@
  }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 	.carProList{
 		padding: .5rem 2%;
 		background: #fff;
+		.carProInfo{
+			display: inline-block;	
+		}
 	}
-  .carProList .carProInfo{
-    display: inline-block;	
-  }
   .carProSelect{
   	width: 10%;
   	vertical-align: middle;
