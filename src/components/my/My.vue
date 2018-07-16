@@ -31,36 +31,33 @@ export default{
     HomeFooter,
 		[Cell.name]:Cell,
 		[CellGroup.name]:CellGroup
-  },
-	created(){
-		this.$store.dispatch('setIndex', 3);
-	}
+  }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 	.perContent{
-	   padding-top: 1.45rem;	 
-	}
-	.perContent .container{
-		height: 3.6rem;
-		background: url(../../../static/img/bj.png) no-repeat;
-		text-align: center;
-		color: #fff;
-		padding: .4rem 0;
-	}
-	.perContent .container .userImg{
-		width: 16%;
-		margin: 0 auto;
-	}
-	.perContent .container .userImg img{
-		    border-radius: 50%;
-	}
-	.perContent .container .userName{
-		font-size: .5rem;
-		margin: .2rem 0;
-	}
-	.perContent .container .userState{
-		font-size: .56rem;
+	   padding-top: 1.45rem;
+		 .container{
+		 	height: 3.6rem;
+		 	background: url(../../../static/img/bj.png) no-repeat;
+		 	text-align: center;
+		 	color: #fff;
+		 	padding: .4rem 0;
+			.userImg{
+				width: 16%;
+				margin: 0 auto;
+				img{
+					border-radius: 50%;
+				}
+			}
+			.userName{
+				font-size: .5rem;
+				margin: .2rem 0;
+			 }
+			 .userState{
+			 	font-size: .56rem;
+			 }
+		 }
 	}
 </style>
