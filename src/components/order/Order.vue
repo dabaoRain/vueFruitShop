@@ -89,7 +89,7 @@ export default{
 }	
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .orderList{
 	  padding-top: 1.45rem;
   }
